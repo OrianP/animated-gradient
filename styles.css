@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap');
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    background: #12c2e9;  /* fallback for old browsers */
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: -webkit-radial-gradient(circle, #801F98 0%,  #883677 20%,
+    #CA61C3 40%, #EB6FA7 60%, #EE85B5 100%);  
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: radial-gradient(circle, #801F98 0%,  #883677 20%,
+    #CA61C3 40%, #EB6FA7 60%, #EE85B5 100%); 
+    font-size: 2.5rem;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    background-size: 200%;
+    animation: gradient 8s linear infinite alternate;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 400;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0%;
+    }
+    100% {
+        background-position: 100%;
+    }
+}
